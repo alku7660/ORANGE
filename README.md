@@ -9,7 +9,7 @@ The data preparation for all the datasets follows the preprocessing steps propos
 
 ## Information to run the algorithm:
 ### Running ORANGE
-The ORANGE algorithm requires the information on possible feature values, feature values directionality and feature mutability, for each of the features in each dataset of interest.  
+The ORANGE algorithm requires the information on the type of feature (categorical, binary, ordinal, continuous), for each of the features in each dataset of interest.  
 In the data_constructor.py file, you may find the definitions for each of these properties for each of the tested datasets in the paper. Should you require adding one dataset that is not part of the ones already set, please complete that dataset information in this file.  
 
 #### Machine
@@ -19,5 +19,3 @@ memory      256GiB System memory
 processor   AMD Ryzen Threadripper 3990X 64-Core Processor  
 storage     Seagate FireCuda 520 SSD ZP2000GM30002 (NVMe)  
 display     TU102 TITAN RTX
-
-Once the dataset properties are set, the Gurobi package and license are installed, and you have verified the program requirements: run the main.py file with the inclusion of the dataset address in your local machine.  
